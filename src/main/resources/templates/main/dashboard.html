@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 
+
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 
 	<head th:replace="layouts :: headTag"></head>
-
+	
 	<body>
-		<div class="container">		    
+		
+		<div class="container">
 			<a th:href="@{/}" class="btn btn-primary">Dashboard</a>
 			<a th:href="@{/members/new}" class="btn btn-primary">Add Member</a>
 			<a th:href="@{/members}" class="btn btn-primary">All Members</a>
 			<div class="row">
-				<form th:action="@{/members/saved}" th:object="${memberFormHtml}" method="POST">
-					<div th:replace="layouts :: memberForm"></div>
+				<form th:action="@{/saved}" th:object="${memberFormHtml}" method="POST">
+					<div th:replace="layouts :: memberForm"></div>				
 				</form>
 			</div>
 		</div>
+	
+		<div th:replace="layouts :: memberData"></div>
+	
 	</body>
-
 </html>

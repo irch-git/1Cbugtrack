@@ -7,6 +7,9 @@
 	
 	<body>
 		<div class="container">
+			<a th:href="@{/}" class="btn btn-primary">Dashboard</a>
+			<a th:href="@{/members/new}" class="btn btn-primary">Add Member</a>
+			<a th:href="@{/members}" class="btn btn-primary">All Members</a>
 			<div class="row">
 				<table th:replace="layouts :: memberData"></table>
 			</div>

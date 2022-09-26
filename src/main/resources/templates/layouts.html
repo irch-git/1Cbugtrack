@@ -23,6 +23,7 @@
       <div class="col-md-4">
 	    <label for="inputState" class="form-label">Email</label>
 	    <select th:field="${memberFormHtml.memberEmail}" id="inputState" class="form-select">
+	      <option th:value="none" selected>Choose...</option>
 	      <option th:value="gmail1">1@gmail.com</option>
 	      <option th:value="gmail2">2@gmail.com</option>
 	      <option th:value="gmail3">3@gmail.com</option>

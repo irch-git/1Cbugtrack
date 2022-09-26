@@ -33,7 +33,7 @@ public class MemberController {
 		
 		memRepo.save(memberFormController);
 		
-		return "redirect:/members/new";
+		return "redirect:/members";
 	}
 	
 	@GetMapping
